@@ -1,7 +1,7 @@
 # springCloud
 
 
-├── yc-common                                     // common package.  
+├── yc-common                                     // common package.  <br>
 │   ├── src/main
 │   ├── ├──java/com/youngcarl/common              // Specific code.  
 │   ├── ├──resources
