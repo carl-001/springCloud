@@ -1,0 +1,16 @@
+server:
+  port: 9004
+spring:
+  application:
+    name: yc-consumer-feign
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:123456@localhost:9001/eureka/
+  instance:
+    prefer-ip-address: true
+
+feign:
+  hystrix:
+    enabled: true

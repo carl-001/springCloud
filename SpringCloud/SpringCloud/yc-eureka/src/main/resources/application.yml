@@ -7,12 +7,10 @@ spring:
     user:
       name: root
       password: 123456
-
 eureka:
   client:
-    #不向注册中心注册自己
+    #涓嶅悜娉ㄥ唽涓績娉ㄥ唽鑷繁
     register-with-eureka: false
-    #不需要检索服务
     fetch-registry: false
     serviceUrl:
       defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:${server.port}/eureka/

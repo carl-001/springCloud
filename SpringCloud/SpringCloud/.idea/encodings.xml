@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/yc-consumer-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yc-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yc-eureka/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yc-provider-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yc-zuul" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yc-zuul/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

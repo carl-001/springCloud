@@ -1,0 +1,40 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: yc-zuul
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:123456@localhost:9001/eureka/
+  instance:
+    prefer-ip-address: true
+
+zuul:
+  routes:
+    yc-provider-server: /api/provider/**
+    yc-consumer-feign: /api/consumer/**
+
+#配置hystrix和feign  否则通过zuul无法获取hystrx熔断返回的数据
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 6000
+
+feign:
+  hystrix:
+    enabled: true
+
+ribbon:
+  #方法调用处理时间
+  ReadTimeout: 6000
+  #连接时间
+  ConnectTimeout: 60000
+  ##最大自动重试次数
+  maxAutoRetries: 1
+  ## 换实例重试次数
+  MaxAutoRetriesNextServer: 2

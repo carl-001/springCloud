@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="common" />
         <module name="yc-common" />
+        <module name="yc-consumer-feign" />
         <module name="yc-eureka" />
+        <module name="yc-provider-server" />
+        <module name="yc-zuul" />
       </profile>
     </annotationProcessing>
   </component>
