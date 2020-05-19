@@ -2,14 +2,14 @@
 
 
 ├── yc-common                                     // common package.  <br>
-│   ├── src/main
-│   ├── ├──java/com/youngcarl/common              // Specific code.  
-│   ├── ├──resources
-├── yc-zuul                                       // gateWay.  
-│   ├── src/main
-│   ├── ├──java/com/youngcarl/zuul                // Specific code.                    :9002 port.
-│   ├── ├──resources
-├── yc-provider-server                            // provider server                   :9003 port.
+│   ├── src/main                                                      <br>
+│   ├── ├──java/com/youngcarl/common              // Specific code.   <br>
+│   ├── ├──resources                                                  <br>
+├── yc-zuul                                       // gateWay.         <br>
+│   ├── src/main                                                      <br>
+│   ├── ├──java/com/youngcarl/zuul                // Specific code.                    :9002 port.  <br>
+│   ├── ├──resources                                                  <br>
+├── yc-provider-server                            // provider server                   :9003 port.  <br>
 │   ├── src/main
 │   ├── ├──java/com/youngcarl/provider            // Specific code.
 │   ├── ├──resources
